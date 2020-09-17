@@ -1,0 +1,50 @@
+<div class="container">
+    <h1>Registration</h1>
+
+
+    <form class="signup" [formGroup]="form" (ngSubmit)="submit()">
+
+        <div class="form-group">
+            <label class = "lblReg" for="username">Username   </label>
+            <input
+                formControlName="username"
+                id="username"
+                type="username"
+                class="form-control">
+            <div *ngIf="f.username.touched && f.username.invalid" class="alert alert-danger">
+                <div class="error-message" *ngIf="f.username.errors.required">Username is required.</div>
+            </div>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label class = "lblReg" for="password">Password</label>
+            <input
+                formControlName="password"
+                id="password"
+                type="password"
+                class="form-control">
+            <div *ngIf="f.password.touched && f.password.invalid" class="alert alert-danger">
+                <div class="error-message" *ngIf="f.password.errors.required">Password is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class = "lblReg" for="confirm_password">Confirm Password</label>
+            <input
+                formControlName="confirm_password"
+                id="confirm_password"
+                type="password"
+                class="form-control">
+            <div *ngIf="f.confirm_password.touched && f.confirm_password.invalid" class="alert alert-danger">
+                <div class="error-message" *ngIf="f.confirm_password.errors.required">Password is required.</div>
+                <div class="error-message" *ngIf="f.confirm_password.errors.confirmedValidator">Password and Confirm Password must be match.</div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary btn-submit" type="submit" [disabled]="!form.valid">Submit</button>
+
+        <div class="error-message" *ngIf="existsIf">User already exists.</div>
+    </form>
+</div>
+

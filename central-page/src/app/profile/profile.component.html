@@ -1,0 +1,22 @@
+<div class ="divusr" *ngIf="loginer.logined">
+  <img src="../../assets/avatar.png"  class ="avatar" >
+  <h1 class = "username "> Username : {{username}}</h1>
+</div>
+
+<mat-card class = "card" *ngFor="let destination of favourites" style="margin-top:10px;">
+  <img class="image" style="height:70px; width: 200px;" src="{{ destination.icons }}" />
+  <mat-card-header>
+    <p class="title">{{destination.location}} - {{destination.agency}}</p>
+</mat-card-header>
+<mat-card-content>
+  <div class="date">
+    <p>Price: {{destination.price}} {{destination.currency}}
+       Date: {{destination.departure | date}} - {{destination.arrival | date}}</p>
+       <a mat-raised-button href="{{destination.links}}" target="_blank" class="btn">View link</a>
+       <button class="glyphicon glyphicon-remove" (click)= "removeDestination(destination)" *ngIf="loginer.logined" > </button>
+  </div>
+    <p>
+        {{destination.description}}
+    </p>
+</mat-card-content>
+</mat-card>

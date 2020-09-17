@@ -1,0 +1,30 @@
+<div class="body">
+  <mat-card *ngIf="dest.length === 0">
+    <mat-card-subtitle>Nothing found</mat-card-subtitle>
+  </mat-card>
+  <mat-card class = "card" *ngFor="let destination of dest; let i = index" style="margin-top:10px;">
+    <img class="image" src="{{ destination.icons }}" />
+      <mat-card-header>
+          <p class="title">{{destination.location}} - {{destination.agency}} </p>
+      </mat-card-header>
+      <mat-card-content>
+          <div class="date">
+            <p>Price: {{destination.price}} {{destination.currency}}
+               Date: {{destination.departure | date}} - {{destination.arrival | date}}</p>
+          </div>
+            <p>
+                {{destination.description}}
+            </p>
+
+            <button class="glyphicon glyphicon-star" (click)= "addFavourites(destination)" *ngIf="loginer.logined" > </button>
+            <!--<div *ngIf= "clickedFav[i]" class="alert alert-success" role="alert">
+              You added destination to your favourites successfully!
+            </div>-->
+            <a mat-raised-button href="{{destination.links}}" target="_blank" class="btn">View link</a>
+      </mat-card-content>
+
+
+  </mat-card>
+</div>
+
+

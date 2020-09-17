@@ -1,0 +1,12 @@
+
+<div class="topnav">
+  <a href="" [routerLink]="['/']" routerLinkActive="active">Home</a>
+  <a href="locations" [routerLink]="['/locations']" routerLinkActive="active">Locations</a>
+  <a class="right login nav-ver" [routerLink]="['/signin']" *ngIf="!loginer.logined" >Sign In</a>
+  <a class="right signup nav-ver" [routerLink]="['/signup']" *ngIf="!loginer.logined">Sign Up</a>
+  <a class="right signup nav-ver" [routerLink]="['/profile']" *ngIf="loginer.logined" routerLinkActive="active">Profile</a>
+  <a class="right login nav-ver" [routerLink]="['/signin']" *ngIf="loginer.logined" (click) = "loginer.logined = false; loginer.favourites =[];">Log out</a>
+</div>
+<router-outlet #routerOutlet="outlet"></router-outlet>
+
+

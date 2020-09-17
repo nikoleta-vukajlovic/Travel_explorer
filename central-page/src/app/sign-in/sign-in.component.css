@@ -1,0 +1,26 @@
+.login{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: #333;  
+        border-radius: 15px ;  
+        border:1px solid;
+        border-bottom-color:#4CAF50; 
+        border-top-color:#4CAF50;    
+        border-left-color:#4CAF50;   
+        border-right-color:#4CAF50; 
+          
+}  
+
+h1{  
+    font-family:"Lucida Console", Courier, monospace;
+    font-size: 34px;
+    padding-top: 15px;
+    padding-left: 500px;
+}
+
+.lblReg{
+    font-size:14px;
+}

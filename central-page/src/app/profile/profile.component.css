@@ -1,0 +1,70 @@
+.glyphicon-remove{
+  color: red;
+  padding: 0;
+border: none;
+background: none;
+font-size: 20px;
+position:relative;
+left: 60%;
+}
+.card{
+  padding: 13px;
+  width:60%;
+  overflow: hidden;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px ;
+  border:1px solid;
+  background: rgb(189, 209, 194);
+  border-bottom-color:#4CAF50;
+  border-top-color:#4CAF50;
+  border-left-color:#4CAF50;
+  border-right-color:#4CAF50;
+  float:left;
+  left:2%;
+}
+
+.title{
+  font-family:"Lucida Console";
+  align-content: center;
+  float:right;
+  font-size: 28px;
+  color: #004d00;
+}
+
+.image{
+  height:150px;
+  width: 300px;
+  float: left;
+}
+
+.btn {
+  position: relative;
+  left: 25%;
+}
+
+
+.date{
+  color: green;
+  position: relative;
+  display: inline;
+  left: 5%;
+}
+.avatar{
+  height:100px;
+  width: 100px;
+  position:relative;
+  left: 2%;
+  filter: grayscale(100%)
+}
+.username{
+  font-family:"Lucida Console";
+  font-size: 28px;
+  color: white;
+  position: relative;
+  left: 1%;
+}
+.divusr{
+  position: relative;
+  top:5%;
+}

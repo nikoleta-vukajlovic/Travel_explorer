@@ -1,0 +1,52 @@
+.glyphicon-star{
+  color: yellow;
+  float: right;
+  padding: 0;
+border: none;
+background: none;
+font-size: 20px;
+}
+.card{
+  width:60%;
+  overflow: hidden;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px ;
+  border:1px solid;
+  background: rgb(189, 209, 194);
+  border-bottom-color:#4CAF50;
+  border-top-color:#4CAF50;
+  border-left-color:#4CAF50;
+  border-right-color:#4CAF50;
+  position: static;
+}
+
+.title{
+  font-family:"Lucida Console";
+  align-content: center;
+  float:right;
+  font-size: 28px;
+  color: #004d00;
+}
+
+.image{
+  height:150px;
+  width: 300px;
+  float:left;
+}
+
+.btn {
+  position: relative;
+  left: 25%;
+}
+
+.body{
+  padding: 13px;
+}
+
+.date{
+  color: green;
+  position: relative;
+  display: inline;
+  left: 5%;
+}

@@ -1,0 +1,36 @@
+<div class="container">
+  <form class="filters" [formGroup]="form">
+  <h1>Travel on your mind?</h1>
+<div>
+  <br>
+  <mat-form-field appearance="fill" class = "dd">
+    <mat-label>departure date</mat-label>
+    <!-- [min] = "minDate" -->
+    <input  matInput [matDatepicker] = "myDatePicker1"  [min] = "minDate" (dateInput)="onInputDepartureDate($event)">
+    <mat-datepicker-toggle [for] = "myDatePicker1" matSuffix> </mat-datepicker-toggle>
+    <mat-datepicker #myDatePicker1 > </mat-datepicker>
+  </mat-form-field>
+</div>
+
+<div>
+  <mat-form-field appearance="fill" class = "rd">
+    <mat-label>return date</mat-label>
+    <!-- [min] = "minDate" -->
+    <input matInput [matDatepicker] = "myDatePicker2" [min] = "minDate" (dateInput)="onInputReturnDate($event)">
+    <mat-datepicker-toggle [for] = "myDatePicker2" matSuffix> </mat-datepicker-toggle>
+    <mat-datepicker #myDatePicker2 > </mat-datepicker>
+</mat-form-field>
+</div>
+
+<div class = "priceDiv">
+Max price:
+  {{ matslider.value }}&euro;
+<br>
+<br>
+<mat-slider (input)="onInputChange($event)" class="myslider" min="1" max="500" step="1" value="1" #matslider ></mat-slider>
+</div>
+
+<br>
+<button class="btn btn-success" (click)="submit()">search filtered results</button>
+</form>
+</div>

@@ -1,0 +1,26 @@
+.signup{  
+    width: 382px;  
+    overflow: hidden;  
+    margin: auto;  
+    margin: 20 0 0 450px;  
+    padding: 80px;  
+    background: #333;  
+    border-radius: 15px ;  
+    border:1px solid;
+    border-bottom-color:#009900; /* Green */
+    border-top-color:#009900;    /* Red */
+    border-left-color:#009900;   /* Black */
+    border-right-color:#009900;  /* Blue */
+    font-size:20px;
+      
+}  
+
+h1{  
+font-family:"Lucida Console", Courier, monospace;
+font-size: 34px;
+padding-top: 15px;
+padding-left: 420px;
+}
+.lblReg{
+    font-size:14px;
+}

@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files
+body {
+  background-image: url('assets/priroda.jpg');
+}
+*/
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body { height: 100%; }
+body{  
+      margin: 0;  
+      padding: 0;  
+      background-image: url('assets/green_background.jpg');
+      background-size:     cover;                      /* <------ */
+    background-repeat:   fixed;
+} 
+
+
+button.btn-submit{
+  background-color:#4CAF50;;
+  color: #fff;
+  width: 100%;
+}
+
+button.btn-submit:focus, button.btn-submit:hover{
+  background-color: #7c8591;
+}
+
+input.ng-invalid.ng-dirty{
+  border-bottom-color: red;
+  box-shadow: 0 1px 0 0 red;
+}
+
+.error-message{
+  color: red;
+}
